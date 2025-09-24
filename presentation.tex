@@ -1,0 +1,69 @@
+\documentclass{beamer}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usetikzlibrary{automata,positioning}
+
+\title{The Reverse of a Regular Language is Regular}
+\author{Tanisha Ahuja \and Natasha}
+\institute{COMP 382}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Problem Statement}
+Given any DFA M, prove that:
+\[ (L(M))^R = \{ w^R | w \in L(M) \} \]
+is regular.
+\end{frame}
+
+\begin{frame}{Key Idea}
+\begin{itemize}
+    \item Convert DFA to NFA by reversing transitions
+    \item Swap start and accept states
+    \item The resulting NFA accepts the reverse language
+    \item Since NFAs recognize regular languages, we're done!
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Construction}
+Given DFA $M = (Q, \Sigma, \delta, q_0, F)$:
+\begin{itemize}
+    \item Create NFA $M' = (Q, \Sigma, \delta', F, \{q_0\})$
+    \item For each transition $\delta(q,a) = p$ in $M$
+    \item Add transition $\delta'(p,a) = q$ in $M'$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Example}
+% We'll add the diagrams here later
+\begin{center}
+Original DFA and its reversed NFA will be shown here
+\end{center}
+\end{frame}
+
+\begin{frame}{Proof Sketch}
+\begin{itemize}
+    \item If $w = a_1a_2...a_n$ is accepted by $M$
+    \item Then $w^R = a_n...a_2a_1$ is accepted by $M'$
+    \item Because we can follow the path in reverse
+    \item Start states become accept states
+    \item Accept states become start states
+\end{itemize}
+\end{frame}
+
+\begin{frame}{References}
+\begin{itemize}
+    \item Sipser, M. (2012). Introduction to the Theory of Computation
+    \item Hopcroft, J. E., et al. (2006). Introduction to Automata Theory
+\end{itemize}
+\end{frame}
+
+\end{document}
