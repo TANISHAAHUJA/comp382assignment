@@ -2,7 +2,7 @@
 # COMP 382 Assignment 1 - Topic 7: DFA Language Reversal
 
 ## Project Repository
-GitHub Repository: https://github.com/TANISHAAHUJA/comp382_assignment
+GitHub Repository: https://github.com/TANISHAAHUJA/comp382assignment
 
 ## Work Planning and Progress Tracking
 
