@@ -8,7 +8,7 @@ GitHub Repository: https://github.com/TANISHAAHUJA/comp382_assignment
 
 ### Git History
 Our development process can be tracked through our git commits at:
-https://github.com/TANISHAAHUJA/comp382_assignment/commits/main
+https://github.com/TANISHAAHUJA/comp382assignment/commits/main
 
 ### Task Progress
 1. ✅ Initial Setup
